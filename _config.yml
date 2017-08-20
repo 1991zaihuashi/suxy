@@ -5,8 +5,8 @@ header-img: img/home-bg-geek.jpg
 email: ccmien@gmail.com
 description: "致知。"
 keyword: ""
-url: "http://iccm.cc"              # your host, for absolute URL
-baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
+url: "http://1991zaihuashi.github.io"              # your host, for absolute URL
+baseurl: "/suxy"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
