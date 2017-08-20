@@ -11,8 +11,8 @@ timezone: Asia/Shanghai
 safe: false
 
 JB :
-  ASSET_PATH : /
-  IMAGE_PATH : /
+  ASSET_PATH : https://1991zaihuashi.github.io/suxy/assets
+  IMAGE_PATH : https://1991zaihuashi.github.io/suxy/images
 #  ASSET_PATH : http://zhu8.qiniudn.com/assets
 #  IMAGE_PATH : http://zhu8.qiniudn.com/images
 # auto: true # deprecated
