@@ -1,34 +1,96 @@
-# This is the default format. 
-# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
-# permalink: /:categories/:year/:month/:day/:title 
-permalink: /blog/:year/:month/:title.html 
-include: ['.htaccess']
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
-markdown: redcarpet
-highlights: pygments
-lsi: false
-timezone: Asia/Shanghai
-safe: false
+# Site settings
+title: CCM Blog
+SEOTitle: CCM的博客 | CCM Blog
+header-img: img/home-bg-geek.jpg
+email: ccmien@gmail.com
+description: "致知。"
+keyword: ""
+url: "http://iccm.cc"              # your host, for absolute URL
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
-JB :
-  ASSET_PATH : https://1991zaihuashi.github.io/suxy/assets
-  IMAGE_PATH : https://1991zaihuashi.github.io/suxy/images
-#  ASSET_PATH : http://zhu8.qiniudn.com/assets
-#  IMAGE_PATH : http://zhu8.qiniudn.com/images
-# auto: true # deprecated
 
-# Themes are encouraged to use these universal variables 
-# so be sure to set them if your theme uses them.
-#
-url: http://git.chenjun.com
-title: Suxy-郁江之南
-tagline: On The Way to Philistinism...
-about: <a href="http://chenjun.com/"><strong>陈俊</strong></a>ChenJun(Zhu8)的个人网站，江苏人士，83年生人，电子产品自虐狂，<a href="http://chenjun.com/wang2/"><strong>王小波</strong></a>门下走狗，欢迎<strong>Fork</strong>本站@<a href="https://github.com/Zhu8/zhu8.github.io/fork">Github</a>。
-author:
-  name: Chen Jun(Zhu8)
-  email: zhu8.net@gmail.com
-  github: Zhu8
-  twitter: 5CJ
-  facebook: ichenjun
-  googleplus: +ChenJun
-  feedburner : Zhu8/github
+
+# SNS settings
+RSS: true
+# weibo_username:
+# zhihu_username:
+github_username:    ccmien
+#twitter_username:
+# facebook_username:
+linkedin_username:  chaominchen
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+  hard_wrap: true
+
+
+
+# Disqus settings
+#disqus_username: _your_disqus_short_name_
+
+# Duoshuo settings
+duoshuo_username: iccm
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+
+
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id: 3d0b352074818a5d8d272e1934b15a87
+# Google Analytics
+ga_track_id: UA-20133350-6             # Format: UA-xxxxxx-xx
+ga_domain: iccm.cc
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Always Curious"
+# sidebar-avatar: /img/      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+# friends: [
+#     {
+#         title: "",
+#         href: ""
+#     },
+# ]
