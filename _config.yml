@@ -1,9 +1,9 @@
 # Site settings
-title: CCM Blog
-SEOTitle: CCM的博客 | CCM Blog
+title: Suxy Blog
+SEOTitle: 苏晓艺的博客 | Suxy Blog
 header-img: img/top-bg.jpg
-email: ccmien@gmail.com
-description: "致知。"
+email: 403701461@qq.com
+description: "致远·求索"
 keyword: ""
 url: "http://1991zaihuashi.github.io"              # your host, for absolute URL
 baseurl: "/suxy"         # for example, '/blog' if your blog hosted on 'host/blog'
